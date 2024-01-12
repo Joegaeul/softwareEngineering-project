@@ -7,7 +7,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
-@Data
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class CreateMemberDto {
 
