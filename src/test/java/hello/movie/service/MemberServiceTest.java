@@ -3,6 +3,7 @@ package hello.movie.service;
 import hello.movie.dto.MemberDto.CreateMemberDto;
 import hello.movie.model.Member;
 import hello.movie.repository.MemberRepository;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -30,6 +31,7 @@ class MemberServiceTest {
     private static MemberService memberService;
 
     @Test
+    @DisplayName("회원가입 성공")
     void join() {
         // given
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
